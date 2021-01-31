@@ -15,8 +15,7 @@ public class WxAppApplication {
 	}
 	
 	@GetMapping("/hello")
-	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-	return String.format("Hello %s!", name);
+	public String hello(@RequestParam(value = "name", defaultValue = "shijiaqi") String name) {
+		return String.format("Hello %s!", name);
 	}
-
 }
